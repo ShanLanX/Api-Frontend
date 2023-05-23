@@ -19,7 +19,7 @@ export type Prop = {
   visible: boolean;
 };
 
-const CreatModal: React.FC<Prop> = (props) => {
+const UpdateModal: React.FC<Prop> = (props) => {
   // const intl = useIntl();
   const { values,visible, columns, onCancel, onSubmit } = props;
   const formRef=useRef<ProFormInstance>();
@@ -44,4 +44,4 @@ const CreatModal: React.FC<Prop> = (props) => {
   );
 };
 
-export default CreatModal;
+export default UpdateModal;

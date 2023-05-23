@@ -25,8 +25,10 @@ interface ResponseStructure {
  * @doc https://umijs.org/docs/max/request#配置
  */
 export const requestConfig: RequestConfig = {
+  // 携带cookie
   baseURL: 'http://localhost:8101/',
-  // withCredentials:true,
+
+  withCredentials:true,
   // 错误处理： umi@3 的错误处理方案。
   errorConfig: {
     // 错误抛出
